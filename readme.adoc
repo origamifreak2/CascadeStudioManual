@@ -81,7 +81,7 @@ CascadeStudio is offered as an open source software at the following github addr
 
 https://github.com/zalo/CascadeStudio
 
-Github is a website intended to develop code. It allows to download complete repositories, change parts and perform version control on the code. Github is especially suited to allow more developers to work on the same set of code files. This also means that you can download all code required to build the software and even create your own version (called "fork") from it.
+Github is a website intended to develop code. It allows you to download complete repositories, change parts and perform version control on the code. Github is especially suited to allow more developers to work on the same set of code files. This also means that you can download all code required to build the software and even create your own version (called a "fork") from it.
 
 Johnathon did not start from scratch but took some components that are available as open source as well. The most important components used to create CascadeStudio are:
 
@@ -1128,7 +1128,7 @@ const degIncrement = 360/divisions
 const heightIncrement = pitch/divisions
 const circumferance = diameter*Math.PI
 const rad2Deg = num => num*180/Math.PI
-const pitchAngle = rad2Deg(Math.atan(pitch/circumferance))
+const pitchAngle = rad2Deg(Math.atan(pitch/circumference))
 
 const loftWires = Array.from({length: divisions*rotations+1}).map(
         (_, index) => Rotate([0,0,-1], index*degIncrement,
